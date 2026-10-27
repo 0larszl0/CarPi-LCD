@@ -2,10 +2,10 @@ from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtGui import QGuiApplication
 
 import sys
-from pathlib import Path
 
-# Adding noqa to a line indicates to the linter that code quality for that line should be ignored (NO-Quality-Assurance)
-from PyScripts import utils  # noqa
+# Import custom QmlElements so that they can be registered
+# 'noqa' (NO-Quality-Assurane) tells the linter that code quality for this line is to be ignored
+from CustomQML import *  # noqa
 
 
 def main() -> tuple[int, QQmlApplicationEngine]:

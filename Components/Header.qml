@@ -2,7 +2,7 @@ import QtQuick 2.2
 import QtQuick.Controls
 import QtQuick.Layouts
 
-import "Header"
+import "HeaderContent"
 
 /*
  * The header for the Main.qml file, it contains:
@@ -11,27 +11,29 @@ import "Header"
  */
 
 Item {
+    id: header
 
-    // RowLayout is used to help the child elements position and resize based on the size of the parenting RowLayout.
-    // This is slightly different from Row, in which the parent (Row) resizes with the size of the children.
-    RowLayout {
-        spacing: 0
-
-        /* ----- Battery Status ----- */
-        Battery {}
-
-        /* ----- - | + ----- */
-        Row {
-            spacing: 2
-
-            /*AppViewAdjuster {
-                zoomMode: "in"
-            }
-
-            AppViewAdjuster {
-                zoomMode: "out"
-            }
-            */
-        }
+    /* ----- Battery Status ----- */
+    Battery {
+        anchors.left: parent.left  // anchors the left-side to the header's left side to allow for a margin
+        anchors.leftMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
     }
+
+    /* ----- - | + ----- */
+    AppViewAdjuster {
+        anchors.right: parent.right
+        anchors.rightMargin: 10
+    }
+
+    /* ----- Border Bottom ----- */
+    Rectangle {
+        width: header.width
+        height: 1
+
+        color: "grey"
+
+        anchors.bottom: header.bottom
+    }
+
 }

@@ -25,14 +25,19 @@ import "Components"
 
 
 ApplicationWindow {
-    id: main
+    id: root
+
+    width: 600//Screen.width
+    height: 400
 
     visible: true  // by default application window's are not visible
-    width: Screen.width
-    height: 500
+
     color: "#000000"  // the window's background colour
 
     // flags: Qt.FramelessWindowHint  // removes the frame that comes with a window
 
-    header: Header {}
+    header: Header {
+        width: root.width
+        height: root.height / 10
+    }
 }

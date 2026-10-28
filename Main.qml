@@ -32,7 +32,7 @@ ApplicationWindow {
 
     visible: true  // by default application window's are not visible
 
-    color: "#000000"  // the window's background colour
+    color: "#141414"  // the window's background colour
 
     // flags: Qt.FramelessWindowHint  // removes the frame that comes with a window
 
@@ -40,4 +40,8 @@ ApplicationWindow {
         width: root.width
         height: root.height / 10
     }
+
+    AppView {}
+
+
 }

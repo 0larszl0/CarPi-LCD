@@ -35,3 +35,10 @@ Note, the follow instructions were made within a Linux environment, an alternati
    2. `cd lcd32/`
    3. Execute the installer most appropriate to your build, in this case: `sudo ./install35.sh`
    4. Explicitly invoke a reboot, as it doesn't do so automatically, to apply the changes.
+
+
+## Media Attributions
+All the media that this project consumes is attributed to the following organisations or individuals, of which I also 
+share much appreciation toward for creating free content for individuals like me to use freely.
+
+   - Prosymbols' '[Open Padlock free icon](https://www.flaticon.com/free-icons/unlock)'

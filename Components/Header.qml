@@ -2,7 +2,7 @@ import QtQuick 2.2
 import QtQuick.Controls
 import QtQuick.Layouts
 
-import "HeaderContent"
+import "Head"
 
 /*
  * The header for the Main.qml file, it contains:

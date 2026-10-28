@@ -25,6 +25,7 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         rows: 1
 
+        AppSlot { Settings {} }
         AppSlot { SlotUnlocker {} }
 
     }

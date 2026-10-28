@@ -10,10 +10,7 @@ Item {
     width: percentage.contentWidth
     height: percentage.height
 
-    Battery {
-        id: battery
-
-    }
+    Battery { id: battery }
 
     Text {
         id: percentage

@@ -20,6 +20,8 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
     }
 
+    Clock {}
+
     /* ----- - | + ----- */
     AppViewAdjuster {
         anchors.right: parent.right

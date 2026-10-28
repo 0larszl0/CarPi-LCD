@@ -42,3 +42,4 @@ All the media that this project consumes is attributed to the following organisa
 share much appreciation toward for creating free content for individuals like me to use freely.
 
    - Prosymbols' '[Open Padlock free icon](https://www.flaticon.com/free-icons/unlock)'
+   - Andrean Prabowo's '[Settings free icon](https://www.flaticon.com/free-icon/settings_8956191?term=wrench&page=1&position=29&origin=search&related_id=8956191)'

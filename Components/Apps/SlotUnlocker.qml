@@ -1,6 +1,5 @@
-import QtQuick.Controls
 import QtQuick.Dialogs
-import QtQuick
+
 import '.'
 
 /* ----- The Item shown when the available number of app slots has been reached ----- */
@@ -14,5 +13,7 @@ AppTemplate {
     MessageDialog {
         id: mess
         text: "Yes"
+
+        flags: Qt.FramelessWindowHint
     }
 }

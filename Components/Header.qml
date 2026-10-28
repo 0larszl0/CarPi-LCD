@@ -1,6 +1,6 @@
-import QtQuick 2.2
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick
 
 import "Head"
 

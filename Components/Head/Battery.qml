@@ -1,7 +1,7 @@
 import QtQuick.Controls
-import QtQuick 2.2
+import QtQuick
 
-import Utils 1.0
+import Utils
 
 
 Item {

@@ -19,9 +19,12 @@
 *
 ****************************************************************************/
 
-import QtQuick.Controls 2.1
-import QtQuick.Window 2.1
+import QtQuick.Controls
+import Qt.labs.StyleKit
+import QtQuick.Window
+
 import "Components"
+import "Styles"
 
 
 ApplicationWindow {
@@ -30,11 +33,10 @@ ApplicationWindow {
     width: 600//Screen.width
     height: 400
 
+    StyleKit.style: DefaultStyle { themeName: "system" }
     visible: true  // by default application window's are not visible
 
-    color: "#141414"  // the window's background colour
-
-    // flags: Qt.FramelessWindowHint  // removes the frame that comes with a window
+    flags: Qt.FramelessWindowHint  // removes the frame that comes with a window
 
     header: Header {
         width: root.width
@@ -42,6 +44,5 @@ ApplicationWindow {
     }
 
     AppView {}
-
 
 }

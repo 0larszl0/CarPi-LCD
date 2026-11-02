@@ -5,7 +5,7 @@ import '.'
 /* ----- The Item shown when the available number of app slots has been reached ----- */
 
 AppTemplate {
-    appImagePath: "../../Images/open-padlock.png"
+    appImagePath: "../../Images/shopping-bag.png"
     appActivation: function() {
         mess.visible = true
     }

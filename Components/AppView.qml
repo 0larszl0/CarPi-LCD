@@ -26,7 +26,7 @@ Rectangle {
         rows: 1
 
         AppSlot { Settings {} }
-        AppSlot { SlotUnlocker {} }
+        AppSlot { AppStore {} }
 
     }
 

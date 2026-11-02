@@ -41,5 +41,6 @@ Note, the follow instructions were made within a Linux environment, an alternati
 All the media that this project consumes is attributed to the following organisations or individuals, of which I also 
 share much appreciation toward for creating free content for individuals like me to use freely.
 
-   - Prosymbols' '[Open Padlock free icon](https://www.flaticon.com/free-icons/unlock)'
    - Andrean Prabowo's '[Settings free icon](https://www.flaticon.com/free-icon/settings_8956191?term=wrench&page=1&position=29&origin=search&related_id=8956191)'
+   - Magnific '[Musical Note free icon](https://www.flaticon.com/free-icon/musical-note_461146?term=note&page=1&position=8&origin=search&related_id=461146)'
+   - CreativeCons '[Shopping Bag free icon](https://www.flaticon.com/free-icon/shopping-bag_2956820?term=shopping%20basket&page=1&position=21&origin=search&related_id=2956820)'

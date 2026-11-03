@@ -1,7 +1,11 @@
-import '.'
+import QtQuick
 
 
-AppTemplate {
-    appImagePath: "../../Images/settings.png"
-    appActivation: function() {}
+Item {
+
+    id: settings
+
+    anchors.fill: parent
+
 }
+

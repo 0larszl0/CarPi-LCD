@@ -31,7 +31,8 @@ Item {
         target: appSlot
 
         function onClicked() {
-            appActivation()
+            appOverview.visible = false  // hides the visibility of the Home Screen's appOverview
+            appActivation()              // the caller to show the contents of the selected app
         }
     }
 }

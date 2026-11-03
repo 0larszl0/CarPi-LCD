@@ -43,6 +43,6 @@ ApplicationWindow {
         height: root.height / 10
     }
 
-    AppView {}
+    Home {}  // acts as a home screen for when the application starts
 
 }

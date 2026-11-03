@@ -1,33 +1,17 @@
 import QtQuick.Controls
 import QtQuick
 
-import "Apps"
-import "."
 
-
-/* ----- Main App View Container ----- */
-Rectangle {
-
-    id: appView
+/* ----- Container for a selection of  ----- */
+Item {
+    property alias appGrid: appGrid.sourceComponent
 
     anchors.fill: parent
-    anchors.margins: height / 10
-    anchors.rightMargin: 0
 
-    color: "#232323"
+    Loader {
+        id: appGrid
 
-    border.color: "#3d3d3d"
-    border.width: 1
-    radius: 10
-
-    /* ----- App Grid ----- */
-    Grid {
         anchors.verticalCenter: parent.verticalCenter
-        rows: 1
-
-        AppSlot { Settings {} }
-        AppSlot { AppStore {} }
-
     }
 
     /* ----- Next page button ----- */

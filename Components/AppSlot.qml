@@ -3,6 +3,8 @@ import QtQuick
 
 
 Button {
+    required property Item appView
+
     property alias imageSlot: imageSlot
 
     width: appView.width * 0.3

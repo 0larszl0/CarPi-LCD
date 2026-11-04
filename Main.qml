@@ -33,16 +33,25 @@ ApplicationWindow {
     width: 600//Screen.width
     height: 400
 
-    StyleKit.style: DefaultStyle { themeName: "system" }
+    StyleKit.style: DefaultStyle { themeName: "Skoda-Fabia-1.2TSI" }
     visible: true  // by default application window's are not visible
 
     flags: Qt.FramelessWindowHint  // removes the frame that comes with a window
+
+    FontLoader {
+        id: applicationFont
+        source: "Fonts/digital_7/digital-7.ttf"
+    }
 
     header: Header {
         width: root.width
         height: root.height / 10
     }
 
-    Home {}  // acts as a home screen for when the application starts
+    Loader {
+        id: body
+        sourceComponent: Home {}
 
+        anchors.fill: parent
+    }
 }

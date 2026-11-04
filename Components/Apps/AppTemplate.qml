@@ -5,7 +5,7 @@ import QtQuick
 
 Item {
     required property string appImagePath
-    required property var appActivation  // a procedure to call when the slot is pressed
+    //required property var appActivation  // a procedure to call when the slot is pressed
 
     property Button appSlot: parent
 
@@ -27,6 +27,7 @@ Item {
     }
 
     // - Connects to the appSlot's onClick signal
+    /*
     Connections {
         target: appSlot
 
@@ -35,4 +36,5 @@ Item {
             appActivation()              // the caller to show the contents of the selected app
         }
     }
+    */
 }

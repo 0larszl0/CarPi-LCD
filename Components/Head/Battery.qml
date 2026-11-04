@@ -1,7 +1,7 @@
 import QtQuick.Controls
 import QtQuick
 
-import Utils
+import Head
 
 
 Item {

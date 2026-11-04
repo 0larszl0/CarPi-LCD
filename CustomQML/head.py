@@ -1,11 +1,11 @@
-from PySide6.QtCore import QObject, Property, Signal, Slot
+from PySide6.QtCore import QObject, Property, Signal
 from PySide6.QtQml import QmlElement
 
 from psutil import sensors_battery
 from datetime import datetime
 
 # - Use global constants to specify import name and version for QML
-QML_IMPORT_NAME = "Utils"
+QML_IMPORT_NAME = "Head"
 QML_IMPORT_MAJOR_VERSION = 1
 
 

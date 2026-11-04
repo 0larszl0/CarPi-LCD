@@ -1,7 +1,14 @@
 import QtQuick
 import QtQml
 
-import Utils
+import Head
+
+/*
+Think about using REACTIVE PROPERTIES
+
+https://doc.qt.io/qtforpython-6/tutorials/reactiveproperties/reactiveproperties.html
+
+*/
 
 
 Item {
@@ -26,6 +33,11 @@ Item {
         font.pointSize: 16
         font.bold: true
         color: "white"
+        //font.family: ""
+
+        font.family: applicationFont.name
+        //font.pointSize: 26
+
     }
 
 }

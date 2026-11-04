@@ -3,12 +3,12 @@ import QtQuick
 
 
 Button {
-    required property Item appView
+    //required property Item appView
 
     property alias imageSlot: imageSlot
 
-    width: appView.width * 0.3
-    height: appView.height * 0.55
+    //width: parent.width * 0.3
+    //height: parent.height// * 0.55
 
     background: Rectangle {
         id: appSlot

@@ -15,7 +15,6 @@ import Qt.labs.StyleKit
  * As such, there's no formal restriction for this style-theme config convention.
  */
 Style {
-
     light: Theme {
         applicationWindow {
             background.color: "#f7f7f7"
@@ -27,6 +26,17 @@ Style {
         applicationWindow {
             background.color: "#141414"
 
+        }
+    }
+
+    CustomTheme {
+        name: "Skoda-Fabia-1.2TSI"
+        theme: Theme {
+
+            applicationWindow {
+                background.color: "#9dd31d"
+
+            }
         }
     }
 }

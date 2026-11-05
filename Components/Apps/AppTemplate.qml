@@ -5,7 +5,6 @@ import QtQuick
 
 Item {
     required property string appImagePath
-    //required property var appActivation  // a procedure to call when the slot is pressed
 
     property Button appSlot: parent
 
@@ -25,16 +24,4 @@ Item {
         source: appImagePath
         fillMode: Image.PreserveAspectFit
     }
-
-    // - Connects to the appSlot's onClick signal
-    /*
-    Connections {
-        target: appSlot
-
-        function onClicked() {
-            appOverview.visible = false  // hides the visibility of the Home Screen's appOverview
-            appActivation()              // the caller to show the contents of the selected app
-        }
-    }
-    */
 }

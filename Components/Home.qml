@@ -5,7 +5,7 @@ import Home
 
 
 Item {
-    anchors.fill: parent  // ensures that this element uses the remainder of the space given by the loader.
+    anchors.fill: parent  // ensures that this element uses all of the space given by the loader.
 
     GridView {
         id: homeGrid

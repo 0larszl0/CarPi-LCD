@@ -1,25 +1,7 @@
-import QtQuick.Controls
-import QtQuick
-
-import Head
+import Tools
 
 
-Item {
-
-    // - The item is only as large as the Text contained within it
-    width: percentage.contentWidth
-    height: percentage.height
-
-    Battery { id: battery }
-
-    Text {
-        id: percentage
-
-        text: "%1%".arg(battery.percent)
-        font.bold: true
-        color: "white"
-        font.pointSize: 16
-
-    }
-
+TimerText {
+    timeStep: 1000 * 60 * 2  // every 2mins
+    textProperty: "%1%".arg(device.charge)
 }

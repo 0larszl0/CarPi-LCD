@@ -8,7 +8,7 @@ import "Head"
  * The header for the Main.qml file, it contains:
  *   >> The battery status of the system, found at the top left corner
  *   >> The - | + found at the top right corner of the window, that alters the size of the grid within AppView.qml
- */
+*/
 
 Item {
     id: header

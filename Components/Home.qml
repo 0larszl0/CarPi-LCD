@@ -21,7 +21,7 @@ Item {
         cellHeight: 100
 
         delegate: AppSlot {
-            width: homeGrid.cellWidth
+            width: homeGrid.cellWidth  // homeGrid must be specified, parent does not work properly within delegate
             height: homeGrid.cellHeight
 
             AppTemplate { appImagePath: imagePath }

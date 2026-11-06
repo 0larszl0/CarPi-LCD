@@ -14,7 +14,15 @@ def main() -> tuple[int, QQmlApplicationEngine]:
     :return: int
     """
     app = QGuiApplication(sys.argv)  # inits the application window and handles the main event loop
-    engine = QQmlApplicationEngine("Main.qml")
+    engine = QQmlApplicationEngine()
+
+    # - Searches the passed directory for installed QML modules (directories that contain 'qmldir')
+    # This allows QML Components within 'Components' to use the 'Tools' QML module.
+    engine.addImportPath("Components")
+    engine.addImportPath('.')
+
+    # Load the Root/Main QML element AFTER importing all relevant modules
+    engine.loadFromModule("Components", "Main")
 
     return app.exec(), engine
 

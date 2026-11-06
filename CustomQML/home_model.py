@@ -2,7 +2,7 @@ from PySide6.QtCore import QAbstractListModel, Qt, QByteArray, QModelIndex
 from PySide6.QtQml import QmlElement
 
 from typing import Any, Optional
-from re import match, sub
+from re import match
 import os
 
 QML_IMPORT_NAME = "Home"
@@ -34,14 +34,15 @@ class ExistingAppModel(QAbstractListModel):
         #       { "name": str, "imagePath": str, "source": str }
         self.__apps: list[dict] = self.__get_apps()
 
-    def __get_apps(self) -> list:
+    @staticmethod
+    def __get_apps() -> list:
         """
         Returns a list of all the existing apps on the system.
         :return: list
         """
         return [
             {
-                "name": sub("[A-Z]", r" \g<0>", app).lstrip(),  # i.e. 'AppStore' --> 'App Store'
+                "name": app,
                 "imagePath": f"{app}/icon.png",  # as this occurs within Apps/ only the designated app and icon need to be passed
                 "source": f"Components/Apps/{app}/Source.qml"  # as this is passed to the 'body' loader, the full path is needed
             }
@@ -85,8 +86,6 @@ class ExistingAppModel(QAbstractListModel):
         :return: Optional[Any]
         """
         item = self.__apps[index.row()]  # processes the app data found at a particular row
-
-        print(item)
 
         match role:
             case Qt.ItemDataRole.DisplayRole:  # the key data to be rendered in the form of text

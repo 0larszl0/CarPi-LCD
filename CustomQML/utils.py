@@ -5,25 +5,31 @@ from psutil import sensors_battery
 from datetime import datetime
 
 # - Use global constants to specify import name and version for QML
-QML_IMPORT_NAME = "Head"
+QML_IMPORT_NAME = "Utils"
 QML_IMPORT_MAJOR_VERSION = 1
 
 
 @QmlElement  # @QmlElement registers the class for use in QML
-class Battery(QObject):
+class Device(QObject):
+    """
+    Addresses any system information or states that may be relevant
+    """
 
     # ----- SIGNALS ----- #
-    percent_sig = Signal(int)
+    charge_sig = Signal(int)
 
     # ----- PROPERTIES ----- #
     # final simply means that this property cannot be overridden.
-    @Property(int, notify=percent_sig, final=True)
-    def percent(self) -> int:
+    @Property(int, notify=charge_sig, final=True)
+    def charge(self) -> int:
         return int(sensors_battery().percent)
 
 
 @QmlElement
-class Clock(QObject):
+class TimeTell(QObject):
+    """
+    Handles any time related information
+    """
 
     # ----- SIGNALS ----- #
     time_change = Signal(str)

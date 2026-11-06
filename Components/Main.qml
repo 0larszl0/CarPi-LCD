@@ -23,8 +23,10 @@ import QtQuick.Controls
 import Qt.labs.StyleKit
 import QtQuick.Window
 
-import "Components"
-import "Styles"
+import Components
+import "../Styles"
+
+import Utils
 
 
 ApplicationWindow {
@@ -42,6 +44,10 @@ ApplicationWindow {
         id: applicationFont
         source: "Fonts/digital_7/digital-7.ttf"
     }
+
+    // - CustomQML for global operations
+    Device { id: device }
+    TimeTell { id: clock }
 
     header: Header {
         width: root.width

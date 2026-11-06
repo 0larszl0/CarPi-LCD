@@ -46,6 +46,11 @@ share much appreciation toward for creating free content for individuals like me
    - _[Image]_ CreativeCons '[Shopping Bag free icon](https://www.flaticon.com/free-icon/shopping-bag_2956820?term=shopping%20basket&page=1&position=21&origin=search&related_id=2956820)'
    - _[Image]_ Gregor Cresnar '[Power free icon](https://www.flaticon.com/free-icon/power_159607?term=power&page=1&position=2&origin=search&related_id=159607)'
    - _[Image]_ Mayor Icons '[Power free icon](https://www.flaticon.com/free-icon/power_8205444?term=power&page=1&position=1&origin=search&related_id=8205444)'
+   - _[Image]_ Slamlabs '[Scanner free icon](https://www.flaticon.com/free-icon/scanner_17682428?term=obd&page=1&position=3&origin=search&related_id=17682428)'
+   - _[Image]_ Magnific '[Download Musical Theme Symbol Of A Music Note With An Arrow Pointing Down free icon](https://www.flaticon.com/free-icon/download-musical-theme-symbol-of-a-music-note-with-an-arrow-pointing-down_26867?term=music%20download&page=1&position=6&origin=search&related_id=26867)' 
+   - _[Image]_ Magnific '[Music Player free icon](https://www.flaticon.com/free-icon/music-player_500148?term=music&page=1&position=2&origin=search&related_id=500148)'
+   - _[Image]_ Magnific '[Save In Folder free icon](https://www.flaticon.com/free-icon/save-in-folder_62327?term=save%20in%20folder&page=1&position=5&origin=search&related_id=62327)'
+   - _[Image]_ Magnific '[Magnifying Glass free icon](https://www.flaticon.com/search?author_id=1&style_id&type=standard&word=serach)'
 
    - _[Font **PERSONAL USE ONLY**]_ Style-7 '[Digital 7](https://www.dafont.com/digital-7.font)'
    - _[Font **PERSONAL USE ONLY**]_ Brøderbund Software '[Varsity](https://www.dafont.com/varsity-2.font)'
